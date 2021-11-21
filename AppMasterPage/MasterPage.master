@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Seccion Menu</h2>
+            <ul>
+                <li><a href="pagina1.aspx">opcion 1</a></li>
+                <li><a href="pagina2.aspx">opcion 2</a></li>
+                <li><a href="pagina3.aspx">opcion 3</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder id="SeccionContenido" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>
